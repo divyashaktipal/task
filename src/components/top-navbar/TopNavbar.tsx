@@ -15,11 +15,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 // import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Menu } from "lucide-react";
+import { Menu, Bell } from "lucide-react";
 import { ModeToggle } from "../theme-provider/mode-toggle";
 // import { AnimatedShinyButton } from "../ui/animated-shiny-button";
 
 const navItems = [
+  { label: <Bell />, path: "/notifications" },
   { label: "Dashboard", path: "/" },
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
@@ -77,7 +78,7 @@ export function TopNavbar() {
                     <Link to={item.path}>{item.label}</Link>
                   </DropdownMenuItem>
                 ))}
-                
+
                 <DropdownMenuItem>
                   <ModeToggle />
                 </DropdownMenuItem>

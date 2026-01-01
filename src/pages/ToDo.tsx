@@ -45,9 +45,9 @@ export default function ToDo() {
         onChange={(e) => setTask(e.target.value)}
       />
 
-      <button onClick={addTask} className="mt-3">
+      <div role="button" onClick={addTask} className="mt-3">
         <AnimatedShinyButton className="h-10 w-30">Submit</AnimatedShinyButton>
-      </button>
+      </div>
 
       {/* display tasks */}
       <div className="mt-5 space-y-2">

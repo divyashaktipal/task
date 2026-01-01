@@ -9,6 +9,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 import Docs from "./pages/Docs";
+import Signup from "./pages/Signup";
+import Login from "../src/pages/Login";
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/docs" element={<Docs />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="*" element={<Dashboard />} />
               </Routes>
             </main>

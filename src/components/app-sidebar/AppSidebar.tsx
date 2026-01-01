@@ -75,6 +75,24 @@ export function AppSidebar() {
 
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
+                  <Link to="/signup">
+                    <HelpCircle className="h-4 w-4" />
+                    <span>signup</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <Link to="/login">
+                    <HelpCircle className="h-4 w-4" />
+                    <span>login</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
                   <Link to="/settings">
                     <Settings className="h-4 w-4" />
                     <span>Settings</span>
