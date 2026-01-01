@@ -1,10 +1,11 @@
-class Notification {
-    constructor(id, title, message, timestamp) {
-        this.id = id;
-        this.title = title;
-        this.message = message;
-        this.timestamp = timestamp;
-    }
-}
+import mongoose from "mongoose";
 
-export default Notification;
+const notificationSchema = new mongoose.Schema({
+  message: String,
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
+export default mongoose.model("Notification", notificationSchema);
